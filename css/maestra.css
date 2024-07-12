@@ -167,6 +167,7 @@ main .btn a {
     background-size: cover;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 .herobanner-container video {
     position: absolute;
@@ -226,19 +227,21 @@ main .btn a {
 }
 .skip-top {
     position: fixed;
-    bottom: 20px;
+    bottom: -40px;
     right: 20px;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 20px;
+    transition: 0.5s bottom ease;
 }
 .skip-top i {
     color: #fff;
 }
+  
 /*Main*/
 main .section {
     padding-top: 20px;
@@ -248,7 +251,6 @@ main .title {
     font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
-    text-align: center;
     color: #fff;
     font-family: 'Gill Sans Std Bold';
 }
@@ -391,12 +393,18 @@ main .comite-tecnico .card {
     padding-bottom: 15px;
     border-top: 1px solid #fff;
     border-radius: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 main .comite-tecnico .card a {
     color: #fff;
     text-decoration: underline;
 }
-
+main .comite-tecnico .card i {
+    margin-left: 2px;
+    font-size: 10px;
+}
 main .comite-tecnico .card .title-b {
     align-items: center;
     justify-content: space-between;
@@ -406,6 +414,18 @@ main .comite-tecnico .card .title-b p {
     opacity: 1;
     margin-bottom: 0;
     margin-right: 20px;
+}
+main .comite-tecnico.a .card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+main .comite-tecnico.a .card p:hover {    
+    overflow: visible;
+    -webkit-line-clamp: inherit; /* Limit to 3 lines */
+    transition: 1s all ease;
 }
 main .comite-tecnico [aria-expanded="true"] i {
     transform: rotate(45deg);
@@ -473,4 +493,39 @@ main .comite-tecnico .card .icono {
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: -25px !important;
+}
+
+@media (max-width: 1240px) {
+    .herobanner-container {
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .herobanner-container video {
+        width: 180% !important;
+    }
+}
+@media (max-width: 992px) {
+    main .historia .card-text .text {
+        max-height: inherit;
+        overflow: auto;
+    }
+    main .historia .card-text .text:after {
+        display: none;
+    }
+}
+@media (max-width: 540px) {
+    .swiper-container {
+        width: 100%;
+    }
+    main .title {
+        font-size: 1rem;
+        text-align: center !important;
+    }
+    main .comite-tecnico.a .card p {
+        overflow: visible;
+        -webkit-line-clamp: inherit;
+    }
 }
