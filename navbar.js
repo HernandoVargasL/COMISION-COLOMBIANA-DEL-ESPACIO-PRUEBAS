@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropDownMenu = document.querySelector(".navbarnavigac");
 
     dropDownButtons.forEach(element => {
+        console.log('working')
         element.addEventListener('click', function(event) {
             dropDownMenu.classList.toggle('expandMenu');
         });
