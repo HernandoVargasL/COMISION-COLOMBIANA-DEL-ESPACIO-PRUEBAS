@@ -247,7 +247,7 @@ input#filterInput {
     width: 100%;
     position: absolute;
     max-height: 0;
-    background-image: url(../images/img-nav-bar.png);
+    background-image: url(../images/img-nav-bar.jpg);
     background-size: cover;
     overflow: hidden;
     transition: all 0.3s ease;

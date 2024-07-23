@@ -369,6 +369,9 @@ main .historia .card-text .text:after {
     width: 100%;
     height: 50px;
 }
+main .historia .card-text .text .text-content {
+    margin-bottom: -20px;
+}
 
 /* miembros */
 main .miembros .title {
@@ -436,7 +439,7 @@ main .comite-tecnico [aria-expanded="false"] i {
     transition: 0.5s transform ease;
 }
 main .comite-tecnico .card .icono {
-    width: 35px;
+    width: 60px;
     height: auto;
 }
 
