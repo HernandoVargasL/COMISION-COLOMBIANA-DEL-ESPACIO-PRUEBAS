@@ -353,7 +353,7 @@ main .objetivos .card-title {
 main .historia .card-text .text {
     background: #606060;
     height: 100%;
-    max-height: 312px;
+    max-height: 340px;
     overflow: auto;
     display: flex;
     align-items: center;
@@ -370,7 +370,12 @@ main .historia .card-text .text:after {
     height: 50px;
 }
 main .historia .card-text .text .text-content {
-    margin-bottom: -20px;
+    margin-bottom: -50px;
+}
+
+main .historia .card-text .text a {
+    color: #fff;
+    text-decoration: underline;
 }
 
 /* miembros */
@@ -512,11 +517,19 @@ main .comite-tecnico .card .icono {
 }
 @media (max-width: 992px) {
     main .historia .card-text .text {
-        max-height: inherit;
-        overflow: auto;
+        max-height: 100%;
+        overflow: visible;
+    }
+    main .historia .card-text .text .text-content {
+        margin-bottom: 0;
     }
     main .historia .card-text .text:after {
         display: none;
+    }
+}
+@media (max-width: 576px) {
+    .herobanner-container video {
+        width: 300% !important;
     }
 }
 @media (max-width: 540px) {
