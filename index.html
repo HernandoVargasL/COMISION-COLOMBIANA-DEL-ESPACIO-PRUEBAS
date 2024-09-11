@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <meta name="description" content="COMISIÓN COLOMBIANA DEL ESPACIO descripción" />
-    <meta name="keywords" content="COMISIÓN COLOMBIANA DEL ESPACIO key word" />
+    <meta name="description" content="La Comisión Colombiana del Espacio-CCE, es un órgano intersectorial de consulta, coordinación, orientación y planificación para orientar el desarrollo e implementación de la política espacial nacional con el objetivo de promover, coordinar y desarrollar actividades relacionadas con la exploración y el uso pacífico del espacio." />
+    <meta name="keywords" content="Comisión Colombiana del Espacio, CCE Colombia, política espacial nacional Colombia, desarrollo del espacio en Colombia, exploración espacial Colombia, uso pacífico del espacio Colombia, coordinación espacial Colombia, planificación espacial en Colombia, actividades espaciales Colombia, desarrollo e implementación de política espacial, órgano intersectorial espacial Colombia, promoción de la política espacial, consultoría espacial en Colombia, orientación espacial nacional, espacio y desarrollo en Colombia" />
     <meta name="author" content="Instituto Geográfico Agustín Codazzi - IGAC" />
     <meta name="title" property="og:title" content="COMISIÓN COLOMBIANA DEL ESPACIO">
     <meta property="og:type" content="website">
@@ -39,7 +39,7 @@
           </a>
           <img src="./images/Logo_CCE.svg" alt="Diccionario Geográfico de Colombia">
         </div>
-        <ul id="link-list">
+        <ul class="navbar-nav" id="link-list">
           <li>
             <a rel="noopener" href="#que-es-la-cce">Qué es la CCE</a>
           </li>
@@ -111,9 +111,11 @@
               </div>
             </div>
             <div class="col-md-12 col-lg-6">
-              <img src="./images/que-es-img.png" alt="" class="mb-2">
-              <div class="text-right">
-                <small class="">Pasado y presente. Estación Terrena Chocontá y Nanosatélite FACSat 2</small>
+              <div class="position-relative">
+                <img src="./images/que-es-img.png" alt="">
+                <div class="text-right position-absolute context">
+                  <small class="">Pasado y presente. Estación Terrena Chocontá y Nanosatélite FACSat 2</small>
+                </div>
               </div>
             </div>
           </div>
@@ -122,8 +124,141 @@
       <div class="section historia mb-2">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-lg-6 d-flex">
-              <img src="./images/img-historia.jpg" alt="">
+            <div class="img-historia col-md-12 col-lg-6 d-flex">
+              <div class="position-relative">
+                <img src="./images/img-historia.jpg" alt="">
+                <div class="backdrop">
+                  <a href="#" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+                    Ver línea de tiempo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-white">
+                    <b class="title">Línea de tiempo</b>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body p-0">
+                    <div class="timeline-container">
+                      <div class="timeline">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-item odd" style="min-width: 40px; opacity: 0;">
+                        </div>
+                        <div class="timeline-item odd">
+                          <div class="title">
+                            1971
+                          </div>
+                          <div class="summary">
+                            Estación Terrena Chocontá
+                          </div>
+                          <div class="img-container">
+                            <img src="/images/dummy.png" alt="">
+                          </div>
+                        </div>
+                        <div class="timeline-item even">
+                          <div class="title">
+                            2002
+                          </div>
+                          <div class="summary">
+                            IV Conferencia Espacial de las Américas
+                          </div>
+                          <div class="img-container">
+                            <img src="/images/dummy.png" alt="">
+                          </div>
+                        </div>
+                        <div class="timeline-item odd">
+                          <div class="title">
+                            2006
+                          </div>
+                          <div class="summary">
+                            Comisión Colombiana del Espacio
+                          </div>
+                          <div class="img-container">
+                            <img src="/images/dummy.png" alt="">
+                          </div>
+                        </div>
+                        <div class="timeline-item even">
+                          <div class="title">
+                            2007
+                          </div>
+                          <div class="summary">
+                            Cubesat Libertad FASATACT 1 U. Sergio Arboleda
+                          </div>
+                          <div class="img-container">
+                            <img src="/images/dummy.png" alt="">
+                          </div>
+                        </div>
+                        <div class="timeline-item odd">
+                          <div class="title">
+                            2016
+                          </div>
+                          <div class="summary">
+                            Infraestructura Colombiana de Datos Espaciales
+                          </div>
+                          <div class="img-container">
+                            <img src="/images/dummy.png" alt="">
+                          </div>
+                        </div>
+                        <div class="timeline-item even">
+                          <div class="title">
+                            2018
+                          </div>
+                          <div class="summary">
+                            POLÍTICA DE DESARROLLO ESPACIAL
+                          </div>
+                          <div class="img-container">
+                            <img src="/images/dummy.png" alt="">
+                          </div>
+                        </div>
+                        <div class="timeline-item odd">
+                          <div class="title">
+                            2018
+                          </div>
+                          <div class="summary">
+                            CONPES 3983 de POLÍTICA DE DESARROLLO ESPACIAL
+                          </div>
+                          <div class="img-container">
+                            <img src="/images/dummy.png" alt="">
+                          </div>
+                        </div>
+                        <div class="timeline-item even">
+                          <div class="title">
+                            2022
+                          </div>
+                          <div class="summary">
+                            Firma Acuerdos Artemis Colombia - NASA
+                          </div>
+                          <div class="img-container">
+                            <img src="/images/dummy.png" alt="">
+                          </div>
+                        </div>
+                        <div class="timeline-item odd">                          
+                          <div class="title">
+                            2023
+                          </div>
+                          <div class="summary">
+                            Cubesat FASATACT 2 Fuerza Aérea Cubesat FACSat 2 Colombiana
+                          </div>
+                          <div class="img-container">
+                            <img src="/images/dummy.png" alt="">
+                          </div>
+                        </div>
+                        <div class="timeline-item odd" style="min-width: 40px; opacity: 0;">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between px-2">
+                      <button class="nav-button prev"><i class="fas fa-chevron-left"></i></button>
+                      <button class="nav-button next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="card-text col-md-12 col-lg-6 d-flex align-items-center">
               <div class="text">
@@ -430,26 +565,43 @@
           </h2>
           <div class="col-12">
             <div class="swiper-container">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="row">
-                      <div class="col-md-12 col-lg-6 mb-3">
-                        <div class="embed-responsive embed-responsive-16by9">
-                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W8Ot--Sdnrw?si=mUq1Q85NAVZc8kyx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="swiper-wrapper">                
+                <div class="swiper-slide">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-6 mb-3">
+                      <img src="images/director.jpg" alt="Director">
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex align-items-center">
+                      <div class="card-content">
+                        <div class="title text-left mb-2">
+                          Coordinación de Proyectos Espaciales en Colombia
                         </div>
-                      </div>
-                      <div class="col-md-12 col-lg-6 d-flex align-items-center">
-                        <div class="card-content">
-                          <div class="title text-left mb-2">
-                            Reactivación del Comité Técnico de Asuntos Espaciales
-                          </div>
-                          <p>
-                            En la Reunión Plenaria de la Comisión Colombiana del Espacio realizada en la Presidencia de la República el 26 de septiembre de 2023, se acordó que el Instituto Geográfico Agustín Codazzi ejercería la coordinación del CTAE. El 29 de mayo de 2024 se realizó la primera reunión de 2024 del CTAE, con lo cual se dio inicio a la reactivación del Comité que no se reunía desde 2021. El video muestra el saludo del señor Director General IGAC, Gustavo A. Marulanda M., con motivo de dicha reunión.
-                          </p>
-                        </div>
+                        <p>
+                          En la Reunión Plenaria de la Comisión Colombiana del Espacio realizada en la Presidencia de la República el 26 de septiembre de 2023, se acordó que el Instituto Geográfico Agustín Codazzi ejercería la coordinación del CTAE. El 29 de mayo de 2024 se realizó la primera reunión de 2024 del CTAE, con lo cual se dio inicio a la reactivación del Comité que no se reunía desde 2021. El video muestra el saludo del señor Director General IGAC, Gustavo A. Marulanda M., con motivo de dicha reunión.
+                        </p>
+                        <a href="#" onclick="viewNews(1)">Ver Noticia Completa</a>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="row">
+                    <div class="col-md-12 col-lg-6 mb-3">
+                      <img src="images/noticias/Reunion-Satcom.png" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex align-items-center">
+                      <div class="card-content news">
+                        <div class="title text-left mb-2">
+                          Reactivación del Comité Técnico de Asuntos Espaciales
+                        </div>
+                        <p>
+                          El IGAC, como coordinador del Comité Técnico de Asuntos Espaciales de la CCE, ha organizado reuniones para coordinar proyectos de comunicaciones satelitales y observación de la Tierra entre diversas entidades estatales colombianas. El objetivo es integrar estos esfuerzos para desarrollar soluciones efectivas en áreas como telecomunicaciones, catastro, salud, educación y más.
+                        </p>
+                        <a href="#" onclick="viewNews(2)">Ver Noticia Completa</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
@@ -537,6 +689,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src='https://unpkg.com/beerslider/dist/BeerSlider.js'></script>
     <script  src="./navbar.js"></script>
+    <script src="datos-noticias.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
