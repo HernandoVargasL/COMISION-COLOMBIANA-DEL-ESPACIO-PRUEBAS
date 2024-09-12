@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const items = document.querySelectorAll('.timeline-item');
     const prevButton = document.querySelector('.nav-button.prev');
     const nextButton = document.querySelector('.nav-button.next');
+    const modalButton = document.getElementById('modalButton');
 
     let currentIndex = 0;
 
@@ -127,6 +128,13 @@ document.addEventListener('DOMContentLoaded', function () {
             updateButtons();
         }
     });
+    
+    modalButton.addEventListener('click', function () {
+        setTimeout(function() {
+            nextButton.click();
+        }, 200);
+    });
+    
 
     // Initialize
     scrollToItem(currentIndex);
